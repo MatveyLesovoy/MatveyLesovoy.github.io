@@ -1,0 +1,50 @@
+body{
+	margin: 0;
+	font-size: 0;
+	background-color: #111;
+}
+#header{
+	position: fixed;
+	left: 10px;
+	top: 10px;
+	right: 10px;
+	height: 70px;
+	background-color: #222;
+	border-radius: 10px;
+}
+#header a{
+	text-decoration-line: none;
+}
+#header .btn{
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	height: 30px;
+	padding: 20px;
+	font-size: 30px;
+	line-height: 30px;
+	color: #FFF;
+}
+#content{
+	min-height: 100vh;
+}
+#footer{
+	padding: 50px;
+	text-align: center;
+	background-color: #222;
+}
+#footer .span{
+	display: inline-block;
+	vertical-align: top;
+	text-align: left;
+	margin-left: 16px;
+	margin-right: 16px;
+	font-size: 16px;
+	color: #AAA;
+}
+#footer .span a{
+	color: #AAA;
+}
+#footer .span a:hover{
+	color: #FFF;
+}
