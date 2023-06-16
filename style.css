@@ -83,6 +83,67 @@ body{
 #block1 img.bg{
 	width: 100%;
 }
+#block2{
+	text-align: center;
+}
+#block2 .block-name{
+	font-size: 32px;
+	font-weight: bold;
+	padding: 64px;
+	color: #FFF;
+}
+#block2 .cards{
+	position: relative;
+	padding: 10px;
+
+}
+#block2 .cards .card{
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	margin: 5px;
+	padding: 5px;
+	width: 480px;
+	height: 480px;
+	color: #AAA;
+	border-radius: 15px;
+	transition-duration: 200ms;
+}
+#block2 .cards .card:hover{
+	background-color: #000;
+	box-shadow: 0 0 10px #000;
+}
+#block2 .cards .card .card-img{
+	width: 480px;
+	height: 270px;
+	background-size: cover;
+	background-position:50% 50%;
+	border-radius: 10px;
+	transition-duration: 200ms;
+}
+#block2 .cards .card:hover .card-img{
+	box-shadow: 0 0 10px #FF0;
+}
+#block2 .cards .card .text{
+	padding: 10px;
+	color: #AAA;
+	text-align: left;
+}
+#block2 .cards .card .text .name{
+	padding: 10px;
+	font-size: 24px;
+}
+#block2 .cards .card .text .descr{
+	padding: 10px;
+	font-size: 16px;
+}
+#block2 .cards .card .author{}
+#block2 .cards .card .author .avatar{}
+#block2 .cards .card .author .data{}
+#block2 .cards .card .author .data .name{}
+#block2 .cards .card .author .data .rank{}
+#block2 .cards .card .author .data .date{}
+
 #footer{
 	padding: 30px;
 	text-align: center;
