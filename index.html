@@ -3,124 +3,68 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="jquery-3.7.0.min.js">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<script type="text/javascript" src="jquery-3.7.0.min.js"></script>
+	<script type="text/javascript" src="jquery-3.6.4.min.js"></script>
 	<script type="text/javascript" src="script.js"></script>
-	<title>Сторінка</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Морський бій</title>
 </head>
 <body>
-	<div id="header">
-		<a href="">
-			<div class="logo">
-				<img src="img/logo.png" class="logo-img">
+	<header>
+		<div id="header_l" class="header_part">
+			<img src="img/logo.svg" id="logo" class="el">
+			<div class="el">Морський бій</div>
+		</div>
+		<div id="header_r" class="header_part">
+			<div class="btn">Про проект</div>
+			<div class="btn">Інші проекти</div>
+			<div class="btn">Автор</div>
+		</div>
+	</header>
+	<content>
+		<div id="field1" class="fields">
+			<div id="cell_name">
+				<div class="cell_name">A</div>
+				<div class="cell_name">B</div>
+				<div class="cell_name">C</div>
+				<div class="cell_name">D</div>
+				<div class="cell_name">E</div>
+				<div class="cell_name">F</div>
+				<div class="cell_name">G</div>
+				<div class="cell_name">H</div>
+				<div class="cell_name">I</div>
+				<div class="cell_name">J</div>
 			</div>
-		</a>
-		<div class="btns-left">
-			<a href="">
-				<div class="btn">
-					TEXT
-				</div>
-			</a>
-			<a href="">
-				<div class="btn">
-					TEXT
-				</div>
-			</a>
-			<a href="">
-				<div class="btn">
-					TEXT
-				</div>
-			</a>
-		</div>
-
-		<div class="btns-right">
-			<a href="">
-				<div class="btn">
-					TEXT
-				</div>
-			</a>
-		</div>
-	</div>
-	<div id="content">
-		<div id="block1" class="block">
-			<img src="img/bg3.jpg" class="bg" >
-		</div>
-		<div id="block2" class="block">
-			<div class="block-name">
-				Альбоми
+			<div id="cell_num">
+				<p class="cell_num">1</p><p class="cell_num">2</p><p class="cell_num">3</p><p class="cell_num">4</p><p class="cell_num">5</p><p class="cell_num">6</p><p class="cell_num">7</p><p class="cell_num">8</p><p class="cell_num">9</p><p class="cell_num">10</p>
 			</div>
-			<div class="cards">
-				<div class="card">
-					<div class="card-img" style="background-image: url('img/news1.jpg');"></div>
-					<div class="text">
-						<div class="name">
-						Назва новини
-						</div>
-						<div class="descr">
-						Опис новин
-						</div>
-					</div>
-					<div class="author">
-						<div class="avatar"></div>
-						<div class="data">
-							<div class="name">Автор Авторчук</div>
-							<div class="rank">Автор новини</div>
-							<div class="date"></div>
-						</div>
-					</div>
-				</div>
-				<div class="card">
-					<div class="card-img" style="background-image: url('img/news2.webp');"></div>
-					<div class="text">
-						<div class="name">
-						Назва новини
-						</div>
-						<div class="descr">
-						Опис новин
-						</div>
-					</div>
-					<div class="author">
-						<div class="avatar"></div>
-						<div class="data">
-							<div class="name">Автор Авторчук</div>
-							<div class="rank">Автор новини</div>
-							<div class="date"></div>
-						</div>
-					</div>
-				</div>
-				<div class="card">
-					<div class="card-img" style="background-image: url('img/news3.jpg');"></div>
-					<div class="text">
-						<div class="name">
-						Назва новини
-						</div>
-						<div class="descr">
-						Опис новин
-						</div>
-					</div>
-					<div class="author">
-						<div class="avatar"></div>
-						<div class="data">
-							<div class="name">Автор Авторчук</div>
-							<div class="rank">Автор новини</div>
-							<div class="date"></div>
-						</div>
-					</div>
-				</div>
+			<canvas id="canvas" height="500" width="500"></canvas>
+			<div id="start_game1">Готово</div>
+		</div>
+		<div id="field2" class="fields">
+			<div id="cell_name">
+				<div class="cell_name">A</div>
+				<div class="cell_name">B</div>
+				<div class="cell_name">C</div>
+				<div class="cell_name">D</div>
+				<div class="cell_name">E</div>
+				<div class="cell_name">F</div>
+				<div class="cell_name">G</div>
+				<div class="cell_name">H</div>
+				<div class="cell_name">I</div>
+				<div class="cell_name">J</div>
 			</div>
+			<div id="cell_num">
+				<p class="cell_num">1</p><p class="cell_num">2</p><p class="cell_num">3</p><p class="cell_num">4</p><p class="cell_num">5</p><p class="cell_num">6</p><p class="cell_num">7</p><p class="cell_num">8</p><p class="cell_num">9</p><p class="cell_num">10</p>
+			</div>
+			<canvas id="canvas2" height="500" width="500"></canvas>
+			<div id="start_game2">Готово</div>
 		</div>
+	</content>
+	<footer>
+		<div id="foot_text">
+			Автор сайту - Лісовий Матвій
+		<div id="dark_mode" title="Змінити кольорову схему">☀</div>
 	</div>
-	<div id="footer">
-		<div class="span">Усі права захищені</div>
-		<div class="span">Автор сайту - <a href="">Матвій</a></div>
-		<div class="span">
-			Автор надихався наступними сайтами:
-			<br>
-			<a href="https://www.playstation.com/uk-ua/horizon/">Horizon game</a>
-			<br>
-			<a href="https://overwatch.blizzard.com/en-us/">Overwatch 2</a>
-		</div>
-	</div>
+	</footer>
 </body>
 </html>

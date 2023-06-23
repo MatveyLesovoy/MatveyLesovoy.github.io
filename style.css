@@ -1,220 +1,172 @@
 @font-face{
-	font-family: ubuntu;
-	src: url("fonts/Ubuntu-Regular.ttf");
-}
-@font-face{
-	font-family: ubuntu-bold;
-	src: url("fonts/Ubuntu-Bold.ttf");
+	font-family: 'Poppins';
+	src: url('fonts/Poppins/Poppins-Regular.ttf');
 }
 body{
-	font-family: ubuntu;
+	font-family: 'Poppins', sans-serif;
+	background-color: #E0D8B0;
+	padding: 0;
 	margin: 0;
-	font-size: 0;
-	background-color: #111;
 }
-#header{
-	font-family: ubuntu-bold;
-	position: fixed;
-	left: 10px;
-	top: 10px;
-	right: 10px;
-	min-height: 70px;
-	background-color: rgba(34, 34, 34, 0.3);
-	-webkit-backdrop-filter: blur(10px);
-	backdrop-filter: blur(10px);
-	border-radius: 10px;
-	box-shadow: 0 0 10px #000;
-	transition-duration: 200ms;
+header{
+	background-color:#FCFFE7 ;
+	margin: 0;
+	padding: 0;
+	height: 55px;
 }
-#header.active{
-	-webkit-backdrop-filter: blur(2px);
-	backdrop-filter: blur(2px);
-}
-#header a{
-	text-decoration-line: none;
-}
-#header .logo{
-	padding: 10px;
-	display: inline-block;
-	vertical-align: top;
-	background-color:  rgba(34, 34, 34, 0.5);
-	border-radius: 10px;
-}
-#header .logo-img{
-	height: 50px;
-}
-#header .btns-left{
-	display: inline-block;
-	vertical-align: top;
-	padding: 10px;
-}
-#header .btns-right{
+.header_part{
 	display: inline-block;
 	vertical-align: middle;
-	padding: 10px;
-	position: absolute;
-	right: 0;
-	top: 0;
 }
-#header .btn{
-	position: relative;
+#logo{
+	height: 35px;
+}
+#header_l{
+
+}
+#header_l .el{
 	display: inline-block;
 	vertical-align: top;
-	height: 30px;
-	padding: 10px;
-	font-size: 30px;
-	line-height: 30px;
-	color: #FFF;
-	transition-duration: 200ms;
-	border-radius: 10px;
-}
-#header .btn:hover{
-	background-color: rgba(34, 34, 34, 0.5);
-}
-#content{
-	min-height: 100vh;
-}
-#content .block{
-
-}
-#block1{
-
-}
-#block1 img.bg{
-	width: 100%;
-}
-#block2{
-	text-align: center;
-}
-#block2 .block-name{
-	font-size: 32px;
-	font-weight: bold;
-	padding: 64px;
-	color: #FFF;
-}
-#block2 .cards{
-	position: relative;
-	padding: 10px;
-
-}
-#block2 .cards .card{
-	position: relative;
-	display: inline-block;
-	vertical-align: top;
+	height: 35px;
+	line-height: 35px;
 	margin: 5px;
 	padding: 5px;
-	width: 480px;
-	height: 480px;
-	color: #AAA;
-	border-radius: 15px;
-	transition-duration: 200ms;
+	font-size: 20px;
 }
-#block2 .cards .card:hover{
-	background-color: #000;
-	box-shadow: 0 0 10px #000;
-}
-#block2 .cards .card .card-img{
-	width: 480px;
-	height: 270px;
-	background-size: cover;
-	background-position:50% 50%;
-	border-radius: 10px;
-	transition-duration: 200ms;
-}
-#block2 .cards .card:hover .card-img{
-	box-shadow: 0 0 10px #FF0;
-}
-#block2 .cards .card .text{
-	padding: 10px;
-	color: #AAA;
-	text-align: left;
-}
-#block2 .cards .card .text .name{
-	padding: 10px;
-	font-size: 24px;
-}
-#block2 .cards .card .text .descr{
-	padding: 10px;
-	font-size: 16px;
-}
-#block2 .cards .card .author{}
-#block2 .cards .card .author .avatar{}
-#block2 .cards .card .author .data{}
-#block2 .cards .card .author .data .name{}
-#block2 .cards .card .author .data .rank{}
-#block2 .cards .card .author .data .date{}
+#header_r{
+	height: 100%;
+	position: absolute;
+	right: 0px;
+	top: 0;
 
-#footer{
-	padding: 30px;
-	text-align: center;
-	background-color: #222;
 }
-#footer .span{
+.btn{
+	font-size: 20px;
 	display: inline-block;
 	vertical-align: top;
-	text-align: left;
-	margin: 16px;
-	font-size: 16px;
-	color: #AAA;
+	border-radius:3px;
+	margin: 5px;
+	padding: 5px;
+	height: 35px;
+	line-height: 35px;
 }
-#footer .span a{
-	color: #AAA;
+.btn:hover{
+	background-color: #CE9461;
+	transition-duration: 200ms;
 }
-#footer .span a:hover{
-	color: #FFF;
-<<<<<<< HEAD
+content{
 }
-@media(max-width: 900px){
-	#header .btns-left{
-		display: none;
+.fields{
+	display: inline-block;
+	margin: 10px;
+	height: calc(100vh - 185px);
 
-	}
-	#header .spec-btn{
-		display: inline-block;
-	}
-	#header .btns-left.active{
-		display: block;
-		position: absolute;
-		top: 100%;
-		left: 0;
-		right: 0;
-		background-color: rgba(34, 34, 34, 0.7);
-	}
-	#header .btns-left.active .btn{
-		display: block;
-	}
 }
-@media(max-width: 860px){
-	#header{
-		top: 0;
-		left: 0;
-		right: 0;
-		position: sticky;
-		border-radius: 0;
-	}
+#canvas{
+
 }
-/*@media(max-width: 500px){
-	#content{
-		padding: 0;
-	}
-	#block2{
-		padding: 0;
-	}
-	#block2 .cards{
-		padding: 0;
-	}
-	#block2 .cards .card{
-		width: 360px;
-		height: 360px;
-	}
-	#block2 .cards .card .card-img{
-		width: 360px;
-		height: 220px;
-	}
-	#block1 .inner .text{
-		display: none;
-	}
+#cell_num{
+	display: inline-block;
+	height: 500px;
+	vertical-align: top;
+} 
+.cell_num{
+	margin: 0;
+	background-color: #FCFFE7;
+	height: 48px;
+	line-height: 48px;
+	text-align: center;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+
+} 
+#cell_name{
+	width: 500px;
+	margin-left: 21px;
+	font-size: 0;
 }
-=======
+.cell_name{
+	display: inline-block;
+	font-size: 16px;
+	margin: 0;
+	margin-bottom: 3px;
+	width: 48px;
+	background-color: #FCFFE7;
+	border-right: 2px solid black;
 }
->>>>>>> parent of c5cd52d ( V0.4)*/
+#start_game1{
+	background-color: #CE9461;
+	font-size: 20px;
+	width: 100px;
+	margin: auto;
+	padding: 5px;
+	text-align: center;
+	border-radius:3px;
+}
+#start_game2{
+	background-color: #CE9461;
+	font-size: 20px;
+	width: 100px;
+	margin: auto;
+	padding: 5px;
+	text-align: center;
+	border-radius:3px;
+}
+#start_game1:hover{
+	background-color: #FCFFE7;
+	transition-duration: 200ms;
+}
+#start_game2:hover{
+	background-color: #FCFFE7;
+	transition-duration: 200ms;
+}
+footer{
+	background-color: #CE9461;
+	padding: 50px;
+	height: 30px;
+}
+#foot_text{
+	text-align: center;
+	color: white;
+}
+.dark{
+	background-color: #333;
+}
+.dark footer{
+	background-color: #453120;
+}
+.dark header{
+	background-color: #545542;
+	color: #FCFFE7;
+}
+.dark #start_game1{
+	background-color: #545542;
+	color: #FCFFE7;
+}
+.dark #start_game2{
+	background-color: #545542;
+	color: #FCFFE7;
+}
+.dark #start_game1:hover{
+	background-color: #FCFFE7;
+	color: #000;
+}
+.dark #start_game2:hover{
+	background-color: #FCFFE7;
+	color: #000;
+}
+.dark header .btn:hover{
+	background-color: #FCFFE7;
+	color: #000;
+}
+.dark .cell_num{
+	background-color: #545542;
+	color: #fff;
+}
+.dark .cell_name{
+	background-color: #545542;
+	color: #fff;
+}
+#dark_mode{
+	cursor: pointer;
+}
