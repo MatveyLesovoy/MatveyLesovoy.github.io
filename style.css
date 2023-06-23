@@ -219,3 +219,25 @@ body{
 		border-radius: 0;
 	}
 }
+@media(max-width: 500px){
+	#content{
+		padding: 0;
+	}
+	#block2{
+		padding: 0;
+	}
+	#block2 .cards{
+		padding: 0;
+	}
+	#block2 .cards .card{
+		width: 360px;
+		height: 360px;
+	}
+	#block2 .cards .card .card-img{
+		width: 360px;
+		height: 220px;
+	}
+	#block1 .inner .text{
+		display: none;
+	}
+}
