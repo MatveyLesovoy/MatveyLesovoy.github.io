@@ -11,6 +11,7 @@ body{
 	margin: 0;
 	font-size: 0;
 	background-color: #111;
+	min-width: 719px;
 }
 #header{
 	font-family: ubuntu-bold;
@@ -25,6 +26,7 @@ body{
 	border-radius: 10px;
 	box-shadow: 0 0 10px #000;
 	transition-duration: 200ms;
+	z-index: 1000;
 }
 #header.active{
 	-webkit-backdrop-filter: blur(2px);
@@ -71,6 +73,14 @@ body{
 #header .btn:hover{
 	background-color: rgba(34, 34, 34, 0.5);
 }
+#header .spec-btn{
+	display: none;
+	margin: 10px;
+	width: 30px;
+	cursor: pointer;
+	text-align: center;
+	margin-left: 10px;
+}
 #content{
 	min-height: 100vh;
 }
@@ -78,18 +88,35 @@ body{
 
 }
 #block1{
-
+	position: relative;
 }
 #block1 img.bg{
 	width: 100%;
 }
+#block1 .inner{
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+#block1 .inner .inner-img{
+	height: 100px;
+}
+#block1 .inner .text{
+	font-size: 32px;
+	color: yellow;
+	text-shadow: 1px 2px 1px #000;
+}
 #block2{
 	text-align: center;
+	padding: 50px;
 }
 #block2 .block-name{
 	font-size: 32px;
 	font-weight: bold;
-	padding: 64px;
+	padding: 50px;
+	padding-top: 15px;
 	color: #FFF;
 }
 #block2 .cards{
@@ -162,4 +189,33 @@ body{
 }
 #footer .span a:hover{
 	color: #FFF;
+}
+@media(max-width: 900px){
+	#header .btns-left{
+		display: none;
+
+	}
+	#header .spec-btn{
+		display: inline-block;
+	}
+	#header .btns-left.active{
+		display: block;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		background-color: rgba(34, 34, 34, 0.7);
+	}
+	#header .btns-left.active .btn{
+		display: block;
+	}
+}
+@media(max-width: 860px){
+	#header{
+		top: 0;
+		left: 0;
+		right: 0;
+		position: sticky;
+		border-radius: 0;
+	}
 }
